@@ -1,9 +1,8 @@
-import { JSX } from "react";
-import Child from "./child";
 
-export default function One(props: JSX.IntrinsicAttributes & { name: string; age: number; }) {
 
+export default function One() {
+    console.log('渲染了One组件')
     return <>
-        <Child {...props} />
+        this is one
     </>
 }
